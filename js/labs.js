@@ -2,13 +2,6 @@ $(document).ready(function(){
 
 	semLabs.initMenu();
 	
-	try{
-		convertEmails();
-		}catch(e){
-			//alert(e.message);
-		}
-
-	
 	$("#homepage").parent().attr("id", "homepagebody");
 	
 	$("#hamMenu").click(function(){
