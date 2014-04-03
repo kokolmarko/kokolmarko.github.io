@@ -171,23 +171,6 @@ function sortTagsListOneLevel(){
 
 function initApiMenu()
 {
-			$("ul a.menuTrigger").click(function(e){
-				//alert("OK");
-				$(this).parent().find("ul.notabs").slideToggle();
-				return e.preventDefault();
-			});
-			
-			
-			$("ul.notabs li a").removeClass("current");
-			var baseUrl = $("a.logo").attr("href").toString();
-			var currentUrl = window.location.pathname;
-			
-			$("ul.notabs li a").each(function(){
-				if(currentUrl.match("^"+$(this).attr("href")+"(/?)$")){
-					$(this).addClass("current");
-				}
-			});	
-
 
 }
 
