@@ -41,9 +41,6 @@ $(document).ready(function(){
 		$("ul.post-list li."+$(this).attr("rel")).addClass("filtered-by-tag").show();
 	});*/
 	
-	$("a.datasetstag-at-item").click(function(){
-		$("ul.tags li a[rel='"+$(this).attr("rel")+"']").click();
-	});	
 	
 	$(".obfuscate").each(function(){
 		var currentMailto = $(this).attr("href");
