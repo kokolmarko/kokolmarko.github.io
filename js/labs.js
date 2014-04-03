@@ -3,24 +3,14 @@ $(document).ready(function(){
 	
 	
 	
-	$("a.datasetstag-at-item").click(function(){
-		$("ul.tags li a[rel='"+$(this).attr("rel")+"']").click();
-	});	
-	
-	if($("#homepage").length <= 0){
-		$("footer").attr("id", "nothomepagefooter");
-	}
-	
 	//select gallery tag if selected
 	var splitedGalleryUrl = window.location.pathname.split('/');
 	if( splitedGalleryUrl.length>2){
 		$("ul.tags li a[rel='"+splitedGalleryUrl[2]+"']").addClass("current-tag");
 	}
-	
-
 	sortTagsListOneLevel();
 	
-		initApiMenu();
+	initApiMenu();
 		 
 });
 
