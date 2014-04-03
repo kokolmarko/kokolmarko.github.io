@@ -32,14 +32,6 @@ $(document).ready(function(){
 		$("div.tabs ul").prepend("<li>"+"<a href='"+document.referrer+"'>← Back to search results</a>"+"</li>");
 	}
 	
-	$(".obfuscate").each(function(){
-		var currentMailto = $(this).attr("href");
-		$(this).attr("href", currentMailto.replace("[at]","@"));
-		
-		var currentText = $(this).text();
-		$(this).text(currentText.replace("[at]","@"));
-	});
-		
 	if($("#homepage").length <= 0){
 		$("footer").attr("id", "nothomepagefooter");
 	}
