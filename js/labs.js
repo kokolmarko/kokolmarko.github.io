@@ -37,10 +37,6 @@ $(document).ready(function(){
 	}
 	
 	//select gallery tag if selected
-	var splitedGalleryUrl = window.location.pathname.split('/');
-	if( splitedGalleryUrl.length>2){
-		$("ul.tags li a[rel='"+splitedGalleryUrl[2]+"']").addClass("current-tag");
-	}
 	
 
 	sortTagsListOneLevel();
