@@ -1,12 +1,6 @@
 $(document).ready(function(){
 
 	
-	try{
-		convertEmails();
-		}catch(e){
-			//alert(e.message);
-		}
-
 	
 	$("#homepage").parent().attr("id", "homepagebody");
 	
