@@ -32,10 +32,6 @@ $(document).ready(function(){
 		$("div.tabs ul").prepend("<li>"+"<a href='"+document.referrer+"'>← Back to search results</a>"+"</li>");
 	}
 	
-	if($("#homepage").length <= 0){
-		$("footer").attr("id", "nothomepagefooter");
-	}
-	
 	//select gallery tag if selected
 	
 
