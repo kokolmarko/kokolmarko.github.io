@@ -29,8 +29,6 @@ $(document).ready(function(){
 	//select gallery tag if selected
 	
 
-	sortTagsListOneLevel();
-	
 	initApiMenu();
 		 
 });
