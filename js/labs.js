@@ -171,7 +171,6 @@ function sortTagsListOneLevel(){
 
 function initApiMenu()
 {
-			
 			$("ul a.menuTrigger").click(function(e){
 				//alert("OK");
 				$(this).parent().find("ul.notabs").slideToggle();
@@ -186,7 +185,6 @@ function initApiMenu()
 			$("ul.notabs li a").each(function(){
 				if(currentUrl.match("^"+$(this).attr("href")+"(/?)$")){
 					$(this).addClass("current");
-					$(this).parent().parent().parent().find("a:first").click();
 				}
 			});	
 
