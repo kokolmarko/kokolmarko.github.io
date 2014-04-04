@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif:400,700&subset=latin,greek,cyrillic,latin-ext' rel='stylesheet' type='text/css'>	    
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>  Data Downloads -  Europeana Labs </title>
+	<title>  Stanbol -  Europeana Labs </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<!-- never cache patterns -->
@@ -81,80 +81,116 @@
 </header>
 <!-- End header -->
 <!--
--->
+--><div id="itemHeader" class="post-list grid">
 
-<div role="main" class="grid">
-	<div class="block block-content-header">
-		<div class="grid__item palm--one-whole push--palm--none three-quarters push--one-quarter">
-			<h2 class="title">Data Downloads</h2>
+		<div class="block block-content-header">
+			<div class="grid__item palm--one-whole push--palm--none three-quarters push--one-quarter">
+					<h2 class="title">Stanbol</h2>
+			</div>
 		</div>
-	</div>
-
-		<div class="grid__item one-quarter palm--one-whole">		
-		<style type="text/css">
-		  ul.notabs {display: none;}
-		  ul.notabs li a {border: 0;}
-
-		  ul ul li { margin:0; margin-left: 30px;}
-		  ul.notabs a { padding: 0.5rem; }	
-		  ul ul li a.current{text-decoration: underline; }		
-		</style>
+	
+	<div class="grid__item one-quarter palm--one-whole">
 		<ul class="tabs tabs-v">
-			<li><a href="/api" title="API Introduction">Introduction</a></li>
-			<li>
-				<a class="menuTrigger">REST API</a>
-				<ul class="notabs tabs-v">
-					<li><a href="/api/getting-started" title="Getting Started with the Europeana REST API">Getting Started</a></li>
-					<li><a href="/api/registration" title="API Registration">Get an API-key</a></li>
-					<li><a href="/api/console" title="API Console">Console</a></li>
-					<li><a href="/api/authentication" title="Authentication">Authentication</a></li>
-					<li><a href="/api/search" title="Search">Search</a></li>
-					<li><a href="/api/query" title="Query">Query Syntax</a></li>
-					<li><a href="/api/record" title="Record">Record</a></li>
-					<li><a href="/api/myeuropeana" title="Accessing MyEuropeana">MyEuropeana</a></li>
-					<li><a href="/api/provider" title="Querying Providers and Datasets">Provider and Datasets</a></li>
-					<!--<li><a href="/api/data-fields" title="API Data Fields Reference">Data Fields</a></li>-->					
-					<li><a href="/api/data-hierarchy" title="Data Hierarchy">Data Hierarchy</a></li>					
-                    <li><a href="/api/data-fields" title="Data Fields">Data Fields</a></li>
-					<li><a href="/api/error" title="Error Codes">Error Codes</a></li>	
-					<li><a href="/api/changelog" title="API ChangeLog">Change Log</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="menuTrigger">Linked Open Data</a>
-				<ul class="notabs tabs-v">
-					<li><a href="/api/linked-open-data/introduction">Introduction</a></li>
-					<li><a href="/api/linked-open-data/data-downloads">Data Downloads</a></li>
-					<li><a href="/api/linked-open-data/SPARQL-endpoint">SPARQL-endpoint</a></li>
-					<li><a href="/api/linked-open-data/data-structure">Data Structure</a></li>
-					<li><a href="/api/linked-open-data/FAQ">FAQ</a></li>
-					<li><a href="/api/linked-open-data/credits">Credits</a></li>
-				</ul>
-			</li>
-			<li><a href="/api/search-widget" title="Search Widget">Search Widget</a></li>			
-			<li><a href="http://www.europeana.eu/portal/rights/api-terms-of-use.html" title="API Data Fields Reference">Terms of Use</a></li>						
-		</ul>	
+			<li><a href="/apps">&larr;&nbsp;Gallery</a></li>
+			<li><a href="http://prose.io/#europeana/Labs/edit/gh-pages/_posts/apps/2014-04-04-Stanbol.md" title="Edit Stanbol in Prose.io" target="_blank">Help improve this page</a></li>
+
+		</ul>
+	</div><!--
+	--><div class="grid__item three-quarters palm--one-whole">
+		    <a href="" title="Stanbol Website">
+		        <img src="/img/apps/Stanbol/Stanbole_enhancementChain.jpg" alt="Stanbol">
+		    </a>
+
+		<div class="b-text">
+		    <div class="prose description">
+		        <p><strong>Stanbol</strong>- The <a href='http://incubator.apache.org/stanbol/'>Apache Stanbol</a> project was initiated by the European R&amp;D project <a href='http://www.iks-project'>IKS</a> (Interactive Knowledge Stack).</p><p>Stanbol is designed to provide semantic services for existing content management systems. It o ffers the following features:</p><ul>
+<li><strong>Content enhancement</strong> services that add semantic information to ‘non-semantic' pieces of content.</li>
+
+<li><strong>Reasoning</strong> services that produce additional semantic information about the content based on the data retrieved via content enhancement.</li>
+
+<li><strong>Knowledge model</strong> services that are used to define and manipulate the data models (e.g., ontologies) for storing the semantic information.</li>
+
+<li><strong>Persistence services</strong> that store (or cache) semantic data (enhanced content, entities, facts) and make it searchable.</li>
+</ul><p>See more information on the <a href='http://incubator.apache.org/stanbol/presentations/www2012-Automated_Linking_Data_with_Apache_Stanbol_rwesten.pdf'>technical details</a></p><p>Two prototypes using the Europeana data are available <em>Note: we recommend the use of Firefox, Safari or Google Chrome to view the demos</em></p><h2 id='enhancement_chains'>Enhancement Chains</h2><p>To use this demo, enter some texts in the Stanbol Enhancer input frame. The text will be linked with the labels of pictures available from the Austrian National Library (ONB). The linking is based on the dataset from the ONB available in the <a href='http://data.europeana.eu'>Europeana Linked Open Data pilot</a>.</p><p>Note that the demo only works with German text. As examples you can use the following texts:</p><ul>
+<li><a href='http://de.wikipedia.org/wiki/Johann_Strau%C3%9F_%28Sohn%29'>http://de.wikipedia.org/wiki/Johann_Strau%C3%9F_%28Sohn%29</a></li>
+
+<li><a href='http://de.wikipedia.org/wiki/Bad_Aussee'>http://de.wikipedia.org/wiki/Bad_Aussee</a></li>
+
+<li><a href='http://de.wikipedia.org/wiki/Totes_Gebirge'>http://de.wikipedia.org/wiki/Totes_Gebirge</a></li>
+</ul><h2 id='hallo'>Hallo</h2><p>The Hallo tool has been developed by the team responsible for<a href='http://viejs.org/'>VIE</a>(Vienna IKS Editables – a Java library). This demo uses text written in a HTML5 Rich Text Editor, where users can accept suggested annotations, triggering the insertion of pictures below the editable region.</p><p>You first have to click on the text and then on the ‘annotate' icon. Click on one of the underlined word and choose your reference from Europeana. The image selected will bring you to the corresponding record on<a href='http://www.europeana.eu/portal'>http://www.europeana.eu</a>.</p>
+				
+	<div class="prose">
+		<h6>Learn more about Stanbol:</h6>
+		<ol>
+			
+				<li class="icon icon-link">&nbsp;<a href="http://incubator.apache.org/stanbol/" title="http://incubator.apache.org/stanbol/ website">http://incubator.apache.org/stanbol/</a></li>
+			
+		</ol>
 	</div>
+
+
+		    </div>
+		</div>
+		
+<br />
+<ul>
+	
+	<li class="contact"><i class="icon icon-user"></i>&nbsp;<strong>Contact:</strong>&nbsp;For more information, or to give feedback, please contact:[Rupert Westenthaler](rupert.westenthaler@gmail.com).</li>
+	
+	
+	
+	
+	
+</ul>
 
 		
-	<div id="documentation" class="prose grid__item palm--one-whole push--palm-none one-half"><!--
-	--><p>This page lists the provenance of metadata currently available at <a href="http://data.europeana.eu">data.europeana.eu</a>. It is organised according to the data aggregators or data providers (individual museums, libraries and archives) who contribute to Europeana.</p>
+	
+		<div class="grid__item b-thumb block block-thumb block-thumb-small one-quarter">
+			<img src="/img/apps/Stanbol/Stanbole_enhancementChain.jpg" alt="">
+		</div>
+	
+		<div class="grid__item b-thumb block block-thumb block-thumb-small one-quarter">
+			<img src="/img/apps/Stanbol/Stanbole_Hallo.jpg" alt="">
+		</div>
+	
 
-<h2 id="current_pilot_datasets">Current pilot datasets</h2>
+		<hr />
+		
+	<div class="tags">
+		<i class="icon icon-tag"></i>
+		
+			<a href="#" class="tag_alt">R&D results</a>
+		
+		
+				
+		
+		
+	</div>
 
-<p>File dumps for 20 million objects from <a href="http://europeana.eu/portal/europeana-contributors.html">Europeana providers</a> are downloadable in RDF at <a href="http://data.europeana.eu/download/2.0/">http://data.europeana.eu/download/2.0/</a>. A detailed overview of the datasets and their data providers is available as a <a href="https://docs.google.com/spreadsheet/ccc?key=0AsHgkgfrIiQ3dHRNaFpGeHVUNFJMazd6WkVEQ21NeHc#gid=0">Google spreadsheet</a>. It is possible to preview a dataset in the Europeana portal by using the following pattern in the search box: europeana_collectionName: &quot;dataset name&quot;. E.g., europeana_collectionName: &quot;15402_L_IE_IMC_census&quot; or europeana_collectionName: &quot;08602_Ag_EU_EFG_InstituoLuce&quot;&lt;/p&gt;</p>
 
-<h2 id="sparql_endpoint">SPARQL endpoint</h2>
+		
+		<style type="text/css">
+ 
+	#share-buttons img {
+	width: 35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+	}
+ 
+</style>
 
-<p>Datasets can also be explored through a SPARQL endpoint at <a href="http://europeana.ontotext.com/">http://europeana.ontotext.com/</a>.</p>
-
-<h2 id="first_experimental_datasets">First experimental datasets</h2>
-
-<p>A <strong>subset</strong> of 2.4 million objects can be fetched over the HTTP protocol using standard Linked Data recipes. RDF files created for the individual collections are also available as dumps, either in N-Triple or XML RDF syntax. Note that single dumps of the RDF data for version 1.2 of data.europeana.eu are also available at <a href="http://data.europeana.eu/download/1.2/">http://data.europeana.eu/download/1.2/</a>.</p>
-
-<p>If you have any questions or feedback, contact us at <a href="europeana-lod@googlegroups.com">europeana-lod@googlegroups.com</a></p><!--
---></div>
+<div style="float:right;">
+	<div id="share-buttons">
+	<a href="http://www.facebook.com/sharer.php?u=http://labs.europeana.eu/apps/Stanbol" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>	 
+	<a href="http://twitter.com/share?url=http://labs.europeana.eu/apps/Stanbol&text=" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>	 
+	<a href="https://plus.google.com/share?url=http://labs.europeana.eu/apps/Stanbol" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+	</div>
 </div>
+    </div>
+    
+
 ﻿<!-- Begin Footer -->
 <footer class="footer" role="contentinfo">
     <div class="lc">
