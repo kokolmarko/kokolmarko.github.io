@@ -104,11 +104,9 @@
             if (this.options.scrollBrowse) this.bindNavScrollBrowse();
         },
         writeNav: function () {
-        	var i = 1, navhtml;
-        	if(this._numPages>1){
-            
+            var i = 1,
+                navhtml;
             navhtml = this.writeBtn("first") + this.writeBtn("previous");
-            
             for (; i <= this._numPages; i++) {
                 if (i === 1 && this.options.startRange === 0) navhtml += "<span>...</span>";
                 if (i > this.options.startRange && i <= this._numPages - this.options.endRange) navhtml += "<a href='#' class='jp-hidden'>";
@@ -128,11 +126,8 @@
                 navhtml += "</a>";
                 if (i === this.options.startRange || i === this._numPages - this.options.endRange) navhtml += "<span>...</span>";
             }
-            
             navhtml += this.writeBtn("next") + this.writeBtn("last") + "</div>";
-            
-           }
-           return navhtml;
+            return navhtml;
         },
         writeBtn: function (which) {
             return this.options[which] !== false && !$(this["_" + which]).length ? "<a class='jp-" + which + "'>" + this.options[which] + "</a>" : "";

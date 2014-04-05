@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif:400,700&subset=latin,greek,cyrillic,latin-ext' rel='stylesheet' type='text/css'>	    
@@ -14,7 +14,7 @@
 	<meta http-equiv="pragma" content="no-cache">
     <link rel="stylesheet" href="/css/styleguide.css"/>
     <link rel="stylesheet" href="/css/screen.css" media="all" />
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    
     <script type="text/javascript" src="//use.typekit.net/otu7ppb.js"></script>
 	<style type="text/css">.tk-dejarip{font-family:"dejarip",sans-serif;}.tk-ff-more-web-pro{font-family:"ff-more-web-pro",serif;}</style><link rel="stylesheet" href="http://use.typekit.net/c/a93097/dejarip:i4:i7:n4:n7,ff-more-web-pro:i4:i5:n4:n5.Pyq:N:2,Pyv:N:2,Pyp:N:2,Pyt:N:2,VVb:N:2,VVf:N:2,VQP:N:2,VVd:N:2/d?3bb2a6e53c9684ffdc9a9bf71c5b2a6272be58e6824d2f2e6fb239e8cf4203049013567d271eb11e88b702a26bb8a567985e44d5fde55c54845fe9b45d924f4b355fc32a2986e0d7fa1266c0d2c63e917d6d7dab80e03b8c354710c21216000daed902279c6555b7e05ebfc7ad2788d2c5b10957"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans' rel='stylesheet' type='text/css'>
@@ -46,7 +46,7 @@
 ﻿<!-- Begin header -->
 <header class="header cf" role="banner">
     <div class="lc">
-        <a href="/" class="logo ir"> </a>	
+        <a href="/" class="logo ir">Europeana</a>	
         <a id="hamMenu" href="#" class="nav-toggle nav-toggle-menu icon-rows"><span class="is-vishidden">Menu</span></a>
         <a href="/rss.xml" class="nav-toggle nav-toggle-search icon-rss"><span class="is-vishidden">Rss</span></a>
         <a href="/search" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
@@ -58,7 +58,7 @@
             <fieldset>
                 <legend class="is-vishidden">Search</legend>
                 <label for="search-field" class="is-vishidden">Search</label>
-                <input type="text" placeholder="Search" id="search-query" name="q" class="search-field search-query" autocomplete="off">
+                <input type="text" placeholder="Search" id="search-query" name="q" class="search-field" autocomplete="off">
                 <button class="search-submit">
                     <span class="icon-search" aria-hidden="true"></span>
                     <span class="is-vishidden">Search</span>
@@ -70,32 +70,34 @@
                 <li><a href="/" class="current">Home</a></li>
                 <li><a href="/api">APIs</a></li>
                 <li><a href="/data">Data</a></li>
-                <li><a href="/apps">Apps</a></li>
+                <li><a href="/locations">Locations</a></li> 
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/blog">Blog</a></li>                
                 <li><a href="/events">Events</a></li>
-                <li><a href="/locations">Locations</a></li>
                 <li><a href="/support">Support</a></li>
             </ul>
         </nav>
     </div>
 	<div class="featureBanner"></div>
 </header>
-<!-- End header -->
-<!--
+<!-- End header --><!--
 --><div role="main" class="grid">
 
-<div id="banner" class="block block-hero"> 
+<div class="block block-hero"> 
 	<div class="b-thumb">
-		<img src="/img/hero_bg.jpg" width="100%" />
+		<img src="/img/hero_bg.png" width="100%" />
 	</div>
 	<div class="b-text"> 
 		<h1>Europeana Labs</h1>
 		<div class="byline">
-			<p>A playground for remixing and using your cultural and scientific heritage.<br />A place for inspiration, innovation and sharing.</p>
-			<p>This is your code, this is your heritage, these are your labs.</p>
+			<br>
+			<p>Giving developers access to cultural and scientific images, texts and audiovisual collections<br> from Europe's leading cultural organisations <br>&mdash; all rights-cleared and ready to use.</p>
 			<div class="startBtn">
-				<a href="http://labs.europeana.eu/blog/welcome-to-the-new-europeana-labs/">GET STARTED</a>
+				<a href="#tblKey">GET STARTED</a>
 			</div>
+			<div id="useOurAPI">
+				<span class="byline-author"><a href="/api" title="API Documentation">Use our API</a></span> or go and experiment at one of our <span class="byline-author"><a href="/spaces" title="Lab Spaces">Spaces</a></span>.
+			</div> 
 		</div>
 	</div> 
 </div>
@@ -110,7 +112,7 @@
 				<td class="key-image"><img src="/img/key.png"></td>
 				<td class="key-form">
 					<h3>Get your API key.</h3>
-					<p>Sign up for your free API key and start developing!
+					<p>Sign up for your free API key and get developing! <br>The rest is up to you.</p>
 						<script type="text/javascript">
 $(document).ready(function(){
 	$("#messageContainer").hide();
@@ -188,20 +190,22 @@ function requestAPIKey(){
 	            <div class="block block-thumb">
 
 	                <div class="b-thumb">
-	                    <a href="/apps/culture-collage">
-	                        <img src="/img/apps/europeana-culture-collage/Culture_Collage.jpg" alt="Europeana Culture Collage">
+	                    <a href="/gallery/culture-collage">
+	                        <img src="/img/gallery/europeana-culture-collage/Culture_Collage.jpg" alt="Europeana Culture Collage">
 	                    </a>
 	                </div>
 
 	                <div class="b-text">
 
 	                    
-		                    <h1 class="headline gamma"><a href="/apps/culture-collage">Europeana Culture Collage</a></h1>
+		                    <h1 class="headline gamma"><a href="/gallery/culture-collage">Europeana Culture Collage</a></h1>
 		                    <div class="description">
-		                        <p>Europeana Culture Collage is developed by Monique Szpak (@zenlan) and started as a simple exercise in mashing up a few of the new web technologies, incl. Europeana API and Europeana visual data.</p>                        
+		                        <p>Europeana Culture Collage is developed by Monique Szpak (@zenlan) and started as a simple exercise in mashing up a few of the new web technologies, incl. Europeana API and Europeana visual data.</p>
+
+                        
 		                    </div>
 						
-						<a href="/apps/culture-collage" title="Europeana Culture Collage" class="text-btn-homepage">Find out more</a>
+						<a href="/gallery/culture-collage" title="Europeana Culture Collage" class="text-btn-homepage">Find out more</a>
 	                </div>
 	            </div>
 	        </li>
@@ -212,69 +216,25 @@ function requestAPIKey(){
 	            <div class="block block-thumb">
 
 	                <div class="b-thumb">
-	                    <a href="/apps/biblioteca">
-	                        <img src="/img/apps/biblioteca-digital-hispanica/Hispania1.png" alt="Biblioteca Digital Hispánica">
+	                    <a href="/gallery/biblioteca">
+	                        <img src="/img/gallery/biblioteca-digital-hispanica/Hispania1.png" alt="Biblioteca Digital Hispánica">
 	                    </a>
 	                </div>
 
 	                <div class="b-text">
 
 	                    
-		                    <h1 class="headline gamma"><a href="/apps/biblioteca">Biblioteca Digital Hispánica</a></h1>
+		                    <h1 class="headline gamma"><a href="/gallery/biblioteca">Biblioteca Digital Hispánica</a></h1>
 		                    <div class="description">
-		                        <p>The National Library of Spain has implemented the Europeana API in their online portal, Biblioteca Digital Hispánica. The portal now enables their users to access related Europeana content via single link on their search result header.</p>                        
+		                        <p>The National Library of Spain has implemented the Europeana API in their online portal, Biblioteca Digital Hispánica. The portal now enables their users to access related Europeana content via single link on their search result header.</p>
+
+                        
 		                    </div>
 						
-						<a href="/apps/biblioteca" title="Biblioteca Digital Hispánica" class="text-btn-homepage">Find out more</a>
+						<a href="/gallery/biblioteca" title="Biblioteca Digital Hispánica" class="text-btn-homepage">Find out more</a>
 	                </div>
 	            </div>
 	        </li>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			
 			
 			
@@ -319,27 +279,26 @@ function requestAPIKey(){
 <div class="grid--center">
 	<div class="grid__item palm--one-whole one-third">
 		<hr class="top-no-margin">
-		<p class="text-btn" align="center"><a href="/apps" class="seemoreapi" title="Application Gallery"><strong>See more examples in the Application Gallery&nbsp;&rarr;</strong></a></p>
+		<p class="text-btn" align="center"><a href="/gallery" class="seemoreapi" title="Application Gallery"><strong>See more examples in the Application Gallery&nbsp;&rarr;</strong></a></p>
 	</div>
 	<br/><br/><br/><br/>
 </div>
-</div>
-<!--
+</div><!--
 -->﻿<!-- Begin Footer -->
 <footer class="footer" role="contentinfo">
     <div class="lc">
 		<div class="social-icons">
-        	<a class="social-icon icon icon-social-twitter" href="https://twitter.com/EuropeanaTech">&nbsp;</a>
-        	<a class="social-icon icon icon-social-facebook" href="https://www.facebook.com/Europeana">&nbsp;</a>
-        	<a class="social-icon icon icon-social-googleplus" href="https://plus.google.com/+europeana/posts">&nbsp;</a>
-            <a class="social-icon icon icon-social-linkedin" href="https://www.linkedin.com/groups/Europeana-134927/about">&nbsp;</a>
-            <a class="social-icon icon icon-social-github" href="https://github.com/europeana">&nbsp;</a>        	
+        	<a class="social-icon twitter" href="https://twitter.com/EuropeanaTech">&nbsp;</a>
+        	<a class="social-icon facebook" href="https://www.facebook.com/Europeana">&nbsp;</a>
+        	<a class="social-icon google" href="https://plus.google.com/+europeana/posts">&nbsp;</a>
+            <a class="social-icon linkedin" href="https://www.linkedin.com/groups/Europeana-134927/about">&nbsp;</a>
+            <a class="social-icon github" href="https://github.com/europeana">&nbsp;</a>        	
         </div>
         <ul class="nav-footer">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About us</a></li>
             <li><a href="http://europeana.eu/portal/rights/terms-and-policies.html">Terms &amp; policies</a></li>
-            <!--<li><a href="#">Sitemap</a></li>-->
+            <li><a href="#">Sitemap</a></li>
         </ul>
         <p class="copyright">Co-funded by the European Union.</p>
         <a class="licensehr" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/img/cc.png"></a>
